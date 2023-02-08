@@ -1,0 +1,116 @@
+.content {
+  @media screen and (min-width: 821px) {
+    border-top-left-radius: calc(10px * 4);
+    border-top-right-radius: calc(10px * 4);
+  }
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  color: #fff;
+}
+
+.close {
+  @media screen and (max-width: 640px) {
+    right: 12px;
+  }
+
+  @media screen and (min-width: 641px) and (max-width: 820px) {
+    right: 45px;
+  }
+
+  @media screen and (max-width: 820px) {
+    top: calc(50px - 2px);
+  }
+
+  @media screen and (min-width: 821px) and (max-width: 1440px) {
+    right: 45px;
+  }
+
+  @media screen and (min-width: 1441px) {
+    right: calc(12px * 5);
+  }
+
+  @media screen and (min-width: 821px) {
+    top: calc(50px * 2 + 10px);
+    width: calc(12px * 3 - 2px);
+    height: calc(12px * 3 - 2px);
+    border: calc(10px / 10) solid #e0e0e0;
+    border-radius: 50%;
+  }
+
+  position: absolute;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.closeIcon {
+  @media screen and (max-width: 820px) {
+    width: 24.08px;
+    height: 18.38px;
+  }
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before,
+  &::after {
+    @media screen and (min-width: 821px) {
+      width: calc(10px / 10);
+      height: calc(12px + 1px);
+    }
+
+    @media screen and (max-width: 820px) {
+      width: calc(10px * 3 - 2px);
+      height: calc(10px / 5);
+    }
+
+    content: "";
+    position: absolute;
+    background-color: #e0e0e0;
+  }
+
+  &::before {
+    @media screen and (min-width: 821px) {
+      transform: rotate(135deg);
+    }
+
+    @media screen and (max-width: 820px) {
+      transform: rotate(145deg);
+    }
+  }
+
+  &::after {
+    @media screen and (min-width: 821px) {
+      transform: rotate(-135deg);
+    }
+
+    @media screen and (max-width: 820px) {
+      transform: rotate(-145deg);
+    }
+  }
+}
+
+.logo {
+  background-color: #fff;
+  width: 129.45px;
+  height: 73.36px;
+
+  @media screen and (max-width: 640px) {
+    margin-left: 12px;
+  }
+
+  @media screen and (min-width: 641px) and (max-width: 1440px) {
+    margin-left: 45px;
+  }
+
+  @media screen and (min-width: 1441px) {
+    margin-left: calc(12px * 5);
+  }
+}

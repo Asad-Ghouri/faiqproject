@@ -1,0 +1,79 @@
+.menuItem {
+  &--desktop {
+    @media screen and (max-width: 820px) {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    @media screen and (min-width: 821px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 820px) {
+      display: flex;
+    }
+  }
+}
+
+.mobileMenu {
+  @media screen and (max-width: 640px) {
+    right: 12px;
+  }
+
+  @media screen and (min-width: 641px) and (max-width: 820px) {
+    right: 45px;
+  }
+
+  @media screen and (max-width: 820px) {
+    position: absolute;
+    top: 34px;
+
+    &[data-state="open"] {
+      display: none;
+    }
+  }
+
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: calc(10px * 2);
+  background-color: #000;
+}
+
+.menuTitle {
+  color: #fff;
+  font-weight: 500;
+}
+
+.burgerMenu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: calc(15px * 2);
+  height: 15px;
+  margin-left: calc(10px * 2);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: calc(12px * 2);
+    height: calc(10px / 5);
+    border-radius: calc(10p / 5);
+    background-color: #fff;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}
+
+.middleLine {
+  position: absolute;
+  top: calc(12px / 2 + 0.5px);
+  width: calc(15px * 2);
+  height: calc(10px / 5);
+  border-radius: calc(10px / 5);
+  background-color: #fff;
+}
