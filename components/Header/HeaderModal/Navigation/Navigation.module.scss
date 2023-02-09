@@ -8,6 +8,11 @@
   }
 }
 
+
+.hset{
+  overflow-y: auto!important;
+}
+
 .rootNavigation {
   @media screen and (max-width: 768px) {
     padding-top: 50px;
@@ -148,7 +153,15 @@
       right: calc(150px + 10px);
       left: calc(150px + 10px);
     }
+    
   }
+
+
+
+  .Navigation_headerList__36ldx{
+      height: 230vh!important;
+    }
+
 
   @media screen and (min-width: 769px) and (max-width: 1280px) {
     padding: {

@@ -1,6 +1,7 @@
 html,
 body {
   padding: 0;
+ overflow: auto!important;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -9,11 +10,27 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+overflow-y: auto!important;
+
+}
+
+html{
+overflow-y: auto!important;
+
 }
 
 * {
   box-sizing: border-box;
 }
 .HeaderModal_content__2NEYB{
-overflow: auto!important;
+overflow-y: auto!important;
+}
+
+/* .reset{
+  height: 210vh!important;
+  padding-bottom: 12rem!important;
+} */
+.Navigation_rootNavigation__2K-vD{
+  height: 104vh!important;
+  overflow: auto!important;
 }
